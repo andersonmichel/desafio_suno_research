@@ -24,7 +24,7 @@ Neste desafio foram desenvolvidos módulos utilizando funções nativas do Wordp
 Login: **desafio**   
 Senha: **desafio**
 
-## Instalação local - opção 1
+## Instalação
 
 **1**. Faça um clone do projeto em localhost:
 
@@ -35,16 +35,6 @@ git clone git@github.com:andersonmichel/desafio_suno_research.git
 **2**. Crie um banco de dados chamado `wordpress_dsr_anderson_michel`.
 
 **3**. Rode o código .sql localizado em `wp-content/database.sql`.
-
-## Instalação via plugin - opção 2
-
-**1**. Crie uma instância da última versão do [Wordpress](https://br.wordpress.org/download/) e acesse o painel administrativo.
-
-**2**. Insale e ative o plugin `All-in-One WP Migration`.
-
-**3**. Baixe o [arquivo de migração](https://br.wordpress.org/download/) e realize a importação no menu `All-in-One WP Migration -> Importar`.
-
-**4**. Vá até `Configurações -> Links Permanentes` e cliquem Salvar para atualizar o .htaccess 
 
 ## Instalação das ferramentas Front & build
 
