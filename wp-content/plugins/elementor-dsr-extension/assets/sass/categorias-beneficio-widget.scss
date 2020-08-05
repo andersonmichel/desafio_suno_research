@@ -1,0 +1,63 @@
+/*
+ * Categorias Benefício Widget Style
+ * 
+ */
+
+ .dsr-wrapper-buttons{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dsr-wrapper-buttons li{
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    margin-top: 11px;
+}
+
+.dsr-wrapper-buttons li:last-child{
+    margin-right: 0;
+}
+
+.dsr-wrapper-buttons li .dsr-btn{
+    background: none;
+    padding: .9em 1.5em;
+    border: 1px solid #222;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s;
+    
+}
+
+/*
+ * Responsive Mode
+ * 
+ */
+
+@media only screen and (max-width: 1025px) {
+
+    .dsr-wrapper-buttons li{
+        margin-top: 0px;
+        margin-bottom: 11px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .dsr-wrapper-buttons li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .dsr-btn{
+        width: 100%;
+    }
+    .elementor-heading-title{
+        text-align: center;
+    }
+    .dsr-wrapper-buttons li .dsr-btn{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

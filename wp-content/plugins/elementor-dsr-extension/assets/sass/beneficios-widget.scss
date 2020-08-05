@@ -1,0 +1,167 @@
+/*
+ * Benefícios Widget Style
+ * 
+ */
+
+.dsr-beneficios-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 50px;
+}
+
+.dsr-beneficios-container .single{
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+}
+
+.dsr-beneficios-container .single .thumb{
+    height: 180px;
+}
+
+.dsr-beneficios-container .single .desconto{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1;
+    width: 60px;
+    height: 60px;
+    padding-top: 13px;
+    position: relative;
+    top: 15px; left: 15px;
+    background: url(../img/desconto-bg.png);
+    color: #ffffff;
+    text-align: center;
+}
+
+.dsr-beneficios-container .single .desconto span{
+    font-size: 18px;
+}
+
+.dsr-beneficios-container .single .text{
+    padding: 40px 35px 20px 35px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.dsr-beneficios-container .single .text h3{
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.dsr-beneficios-container .single .text .url_empresa{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.dsr-beneficios-container .single .text p{
+    color: #696969;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.dsr-beneficios-container .single .text p a, .dsr-beneficios-container .single .text a{
+    font-size: .85em;
+    color: #d41200;
+}
+
+.dsr-beneficios-container .single .logo{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    float: right;
+    margin-top: -45px;
+    margin-right: 35px;
+}
+
+.dsr-beneficios-paginacao{
+    text-align: center;
+}
+
+.dsr-beneficios-paginacao .dsr-btn-carregar-mais{
+    color: #d41200;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.dsr-beneficios-paginacao .dsr-btn-carregar-mais i{
+    margin-right: 10px;
+}
+
+.dsr-beneficios-paginacao .numeros{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+}
+
+.dsr-beneficios-paginacao .numeros span, 
+.dsr-beneficios-paginacao .numeros a{ 
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 7px 15px;;
+    border-radius: 5px;
+}
+
+.dsr-beneficios-paginacao .numeros span{
+    background: #F8F8F8;
+    color: #000;
+}
+.dsr-beneficios-paginacao .numeros a{
+    background: #ffffff;
+    color: #d41200;
+}
+.dsr-beneficios-paginacao .numeros a:hover{
+    background: #fafafa;
+}
+
+.dsr-loading-spinner{
+    position: fixed;
+    left: 42%;
+    top: 42%;
+    z-index: 1000;
+    width: 130px;
+    height: 130px;
+    display: none;
+}
+
+.dsr-nenhum-resultado{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dsr-nenhum-resultado p{
+    font-size: 14px;
+    text-align: center;
+    color: #696969;
+    margin: 40px 0;
+}
+
+/*
+ * Responsive Mode
+ * 
+ */
+
+@media only screen and (max-width: 1025px) {
+    .dsr-beneficios-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dsr-beneficios-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dsr-loading-spinner{
+        left: 35%;
+        top: 42%;
+    }
+    .dsr-beneficios-paginacao .numeros span, 
+    .dsr-beneficios-paginacao .numeros a{
+        margin-bottom: 10px;
+    } 
+}
