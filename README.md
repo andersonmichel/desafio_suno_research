@@ -29,7 +29,7 @@ Senha: **desafio**
 **1**. Faça um clone do projeto em localhost:
 
 ```
-git clone https://github.com/andersonmichel/desafio_suno_research.git
+git clone git@github.com:andersonmichel/desafio_suno_research.git
 ```
 
 **2**. Crie um banco de dados chamado `wordpress_dsr_anderson_michel`.
