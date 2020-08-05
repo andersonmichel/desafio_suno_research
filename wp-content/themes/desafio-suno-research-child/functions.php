@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 
  */
 function desafio_suno_research_child_enqueue_scripts() {
+	wp_enqueue_script( 'jquery-ui-mouse', false, array('jquery') );
 	wp_enqueue_style( 
 		'father-style',  
 		get_template_directory_uri() . '/style.css',
